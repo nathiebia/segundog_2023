@@ -1,5 +1,51 @@
-.maumau{
+:root{
+  --cor-mesa:rgb(30, 30, 133);
+  --face-dado:rgb(29, 138, 29);
+  --bola:rgb(17, 11, 11);
+}
+* {
+    margin: 0;
+    padding: 0;
+}  
+
+
+.mesa {
     width: 100%;
-    height: 20%;
-    background: rgb(235, 203, 62);
+    height: 200px;
+    background-color: var(--cor-mesa);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+} 
+.face {
+  background-color: var(--face-dado);
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  top: 300px;
+  align-items: center;
+} 
+.face_dois {
+    height: 50%;
+}
+.face_dois_um{
+    display: flex;
+    justify-content: end;
+
+}
+.face_dois_dois{
+    display: flex;
+    align-items: end;
+    height: 100%;
+} 
+.bolinha {
+    height: 20px;
+    width: 20px;
+    background-color: var(--bola);
+    border-radius: 50%;
+    margin: 5px;
+
 }
